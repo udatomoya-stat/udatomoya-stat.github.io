@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  color: #222;
+  background: #f4f6f8;
+  line-height: 1.8;
+}
+
+main {
+  max-width: 800px;
+  margin: 48px auto;
+  padding: 32px 48px 40px;
+  background: #fff;
+  border: 1px solid #d8dee4;
+}
+
+.language-switch {
+  margin: 0 0 1rem;
+  text-align: right;
+  font-size: 0.95rem;
+}
+
+.language-switch a {
+  color: #17365d;
+}
+
+.language-switch [aria-current="page"] {
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  color: #17365d;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  color: #17365d;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #b8c4d1;
+}
+
+h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.affiliation {
+  margin-top: 0.5rem;
+  color: #4b5563;
+}
+
+.contact {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+li + li {
+  margin-top: 0.8rem;
+}
+
+hr {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  body {
+    background: #fff;
+  }
+
+  main {
+    margin: 0;
+    padding: 20px;
+    border: 0;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
