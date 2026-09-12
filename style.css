@@ -21,13 +21,34 @@ main {
 .top-nav {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   gap: 1rem;
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d8dee4;
   font-size: 0.95rem;
+}
+
+.page-nav,
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 2.25rem;
+  padding: 0.25rem 0.75rem;
+  background: #f4f6f8;
+  border: 1px solid #d8dee4;
+  border-radius: 6px;
 }
 
 .top-nav a {
   color: #17365d;
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .top-nav [aria-current="page"] {
@@ -65,6 +86,23 @@ h3 {
   font-size: 0.95rem;
 }
 
+.post-meta {
+  margin-top: 0.5rem;
+  color: #4b5563;
+}
+
+.placeholder {
+  padding-left: 1rem;
+  color: #4b5563;
+  border-left: 3px solid #b8c4d1;
+}
+
+.translation-note {
+  margin-top: 2.5rem;
+  color: #6b7280;
+  text-align: right;
+}
+
 ul,
 ol {
   padding-left: 1.5rem;
@@ -90,9 +128,13 @@ hr {
   }
 
   .top-nav {
-    align-items: flex-end;
-    flex-direction: column-reverse;
-    gap: 0.25rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .page-nav,
+  .language-switch {
+    justify-content: center;
   }
 
   h1 {
