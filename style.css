@@ -18,17 +18,19 @@ main {
   border: 1px solid #d8dee4;
 }
 
-.language-switch {
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
   margin: 0 0 1rem;
-  text-align: right;
   font-size: 0.95rem;
 }
 
-.language-switch a {
+.top-nav a {
   color: #17365d;
 }
 
-.language-switch [aria-current="page"] {
+.top-nav [aria-current="page"] {
   font-weight: 700;
 }
 
@@ -85,6 +87,12 @@ hr {
     margin: 0;
     padding: 20px;
     border: 0;
+  }
+
+  .top-nav {
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    gap: 0.25rem;
   }
 
   h1 {
